@@ -1,0 +1,86 @@
+/* General card styling */
+.cardContainer {
+    width: 100%;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Ensure all child elements take full width */
+  .cardContainer > * {
+    width: 100%;
+  }
+  
+  /* Styling for the card header (task ID and user avatar) */
+  .cardHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Avatar styling */
+  .imageContainer {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Styling for the card title */
+  .cardTitle {
+    font-weight: 200;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Tag section in the card */
+  .cardTags {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Priority icon styling */
+  .priority-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .priority-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Tag styling (e.g., Feature Request) */
+  .tags {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    color: gray;
+    border: 1px solid silver;
+    width: max-content;
+  }
+  
+  /* Utility classes */
+  .color-grey {
+    color: gray;
+  }
+  
+  /* Flexbox utility */
+  .flex-gap-10 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

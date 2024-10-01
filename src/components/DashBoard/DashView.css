@@ -1,0 +1,83 @@
+/* Container for the entire dashboard (columns are displayed inside this) */
+.dashContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Each column in the Kanban board */
+  .dashCardContainer {
+    width: 250px;
+    margin-right: 20px;
+    background: #f8f8fa;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 20px;
+  }
+  
+  /* Column heading (flex layout for icon and title) */
+  .dashCardHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the left section (priority/user icon and title) */
+  .leftView {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and title */
+  }
+  
+  /* Container for the list of cards within each column */
+  .dashList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Message styling for columns with no records */
+  .dashList p {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Right section (add new card icon) */
+  .rightView {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Styling for the priority icons (or user image) in the heading */
+  .priority-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Flexbox utility class for gaps */
+  .flex-gap-10 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .dashContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .dashCardContainer {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
